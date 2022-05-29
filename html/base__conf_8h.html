@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CUBE: Файл base_conf.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">CUBE<span id="projectnumber">&#160;001</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.3 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',false,false,'search.php','Пошук');
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макровизначення</a> &#124;
+<a href="#typedef-members">Визначення типів</a> &#124;
+<a href="#var-members">Змінні</a>  </div>
+  <div class="headertitle"><div class="title">Файл base_conf.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком. Вміщує список базових типів, корисних макросів для бінарних операцій, та швидке піднесення в цілий степінь.  
+<a href="#details">Детальніше...</a></p>
+
+<p><a href="base__conf_8h_source.html">Див. вихідні тексти.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макровизначення</h2></td></tr>
+<tr class="memitem:a095fbac83d9ab735e85aa328b73788f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a095fbac83d9ab735e85aa328b73788f1">CUBE_MAX_COORD_INT</a>&#160;&#160;&#160;9</td></tr>
+<tr class="memdesc:a095fbac83d9ab735e85aa328b73788f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Налаштування фізичних параметрів кубика  <a href="base__conf_8h.html#a095fbac83d9ab735e85aa328b73788f1">Детальніше...</a><br /></td></tr>
+<tr class="separator:a095fbac83d9ab735e85aa328b73788f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62754e0d20a5fcb3511212e2d89decf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a62754e0d20a5fcb3511212e2d89decf8">CUBE_STRIPS_COUNT</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:a62754e0d20a5fcb3511212e2d89decf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кількість стрічок світлодіодів  <a href="base__conf_8h.html#a62754e0d20a5fcb3511212e2d89decf8">Детальніше...</a><br /></td></tr>
+<tr class="separator:a62754e0d20a5fcb3511212e2d89decf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bd921b8d1509338204ef884b81176a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a82bd921b8d1509338204ef884b81176a">CUBE_LED_COUNT_ON_STRIP</a>&#160;&#160;&#160;50</td></tr>
+<tr class="memdesc:a82bd921b8d1509338204ef884b81176a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кількість світлодіодів в стрічці  <a href="base__conf_8h.html#a82bd921b8d1509338204ef884b81176a">Детальніше...</a><br /></td></tr>
+<tr class="separator:a82bd921b8d1509338204ef884b81176a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081c298396db214d51fe86787a54f852"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a081c298396db214d51fe86787a54f852">RENDER_TIME_ON_STRIP</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a081c298396db214d51fe86787a54f852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Налаштування render-а (відрисовника)  <a href="base__conf_8h.html#a081c298396db214d51fe86787a54f852">Детальніше...</a><br /></td></tr>
+<tr class="separator:a081c298396db214d51fe86787a54f852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00694174b9ecaa3819f31dbb0435f38d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a00694174b9ecaa3819f31dbb0435f38d">WEBCTR_INF_UPDATE_DELAY</a>&#160;&#160;&#160;2000</td></tr>
+<tr class="memdesc:a00694174b9ecaa3819f31dbb0435f38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Налаштування веб-контролера  <a href="base__conf_8h.html#a00694174b9ecaa3819f31dbb0435f38d">Детальніше...</a><br /></td></tr>
+<tr class="separator:a00694174b9ecaa3819f31dbb0435f38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d180c3879c0945b5d4d71897830171a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a3d180c3879c0945b5d4d71897830171a">WEBCTR_QUERY_LINK</a>&#160;&#160;&#160;&quot;www.your-web.dom/for_cube_php&quot;</td></tr>
+<tr class="memdesc:a3d180c3879c0945b5d4d71897830171a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Адреса запитів для кубика  <a href="base__conf_8h.html#a3d180c3879c0945b5d4d71897830171a">Детальніше...</a><br /></td></tr>
+<tr class="separator:a3d180c3879c0945b5d4d71897830171a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd45e686e035c910a8d3426ba7ef0c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#abfd45e686e035c910a8d3426ba7ef0c2">WEBCTR_WIFI_SSID</a>&#160;&#160;&#160;&quot;your_ssid&quot;</td></tr>
+<tr class="memdesc:abfd45e686e035c910a8d3426ba7ef0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSID вашого WiFi пристрою  <a href="base__conf_8h.html#abfd45e686e035c910a8d3426ba7ef0c2">Детальніше...</a><br /></td></tr>
+<tr class="separator:abfd45e686e035c910a8d3426ba7ef0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1005f3b72bbfb32399a06bc4cfc2328b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a1005f3b72bbfb32399a06bc4cfc2328b">WEBCTR_WIFI_PASS</a>&#160;&#160;&#160;&quot;your_password&quot;</td></tr>
+<tr class="memdesc:a1005f3b72bbfb32399a06bc4cfc2328b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пароль вашого WiFi прстрою  <a href="base__conf_8h.html#a1005f3b72bbfb32399a06bc4cfc2328b">Детальніше...</a><br /></td></tr>
+<tr class="separator:a1005f3b72bbfb32399a06bc4cfc2328b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(a,  b)&#160;&#160;&#160;(((a)&lt;(b)) ? (a) : (b))</td></tr>
+<tr class="memdesc:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Додаткові швидкі операції  <a href="base__conf_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">Детальніше...</a><br /></td></tr>
+<tr class="separator:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(a,  b)&#160;&#160;&#160;(((a)&gt;(b)) ? (a) : (b))</td></tr>
+<tr class="memdesc:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос знаходження найбільшого значення  <a href="base__conf_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">Детальніше...</a><br /></td></tr>
+<tr class="separator:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f08dc603ae93c402abd918ba4e23e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#ae2f08dc603ae93c402abd918ba4e23e1">ABS</a>(a)&#160;&#160;&#160;( (a)&lt;0?(-(a)):(a) )</td></tr>
+<tr class="memdesc:ae2f08dc603ae93c402abd918ba4e23e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос знаходження модуля числа  <a href="base__conf_8h.html#ae2f08dc603ae93c402abd918ba4e23e1">Детальніше...</a><br /></td></tr>
+<tr class="separator:ae2f08dc603ae93c402abd918ba4e23e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0333f0eea276317e2d9867ca60f24cdc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a0333f0eea276317e2d9867ca60f24cdc">ONEUINT</a>&#160;&#160;&#160;((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)1)</td></tr>
+<tr class="memdesc:a0333f0eea276317e2d9867ca60f24cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">32бітна одиниця  <a href="base__conf_8h.html#a0333f0eea276317e2d9867ca60f24cdc">Детальніше...</a><br /></td></tr>
+<tr class="separator:a0333f0eea276317e2d9867ca60f24cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab866aeaa7e85d62a25ae347d48a77e5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#ab866aeaa7e85d62a25ae347d48a77e5b">B_MOD</a>(a)&#160;&#160;&#160;((a) &amp; <a class="el" href="base__conf_8h.html#a0333f0eea276317e2d9867ca60f24cdc">ONEUINT</a> )</td></tr>
+<tr class="memdesc:ab866aeaa7e85d62a25ae347d48a77e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає остачу від ділення a на 2.  <a href="base__conf_8h.html#ab866aeaa7e85d62a25ae347d48a77e5b">Детальніше...</a><br /></td></tr>
+<tr class="separator:ab866aeaa7e85d62a25ae347d48a77e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7ac642701a01646951c089c254727f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#aba7ac642701a01646951c089c254727f">B_MUL2n</a>(a,  n)&#160;&#160;&#160;( (a) &lt;&lt; ((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n)) )</td></tr>
+<tr class="memdesc:aba7ac642701a01646951c089c254727f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цілочисельне множення числа a на \(2^n \).  <a href="base__conf_8h.html#aba7ac642701a01646951c089c254727f">Детальніше...</a><br /></td></tr>
+<tr class="separator:aba7ac642701a01646951c089c254727f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3876cf8fdf4cb4ba1d301e72ba233422"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a3876cf8fdf4cb4ba1d301e72ba233422">B_MOD2n</a>(a,  n)&#160;&#160;&#160;( (a)&amp; ( ~( ((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)-1) &lt;&lt; ((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n)) ) ) )</td></tr>
+<tr class="memdesc:a3876cf8fdf4cb4ba1d301e72ba233422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Остача від ділення числа a на \(2^n \).  <a href="base__conf_8h.html#a3876cf8fdf4cb4ba1d301e72ba233422">Детальніше...</a><br /></td></tr>
+<tr class="separator:a3876cf8fdf4cb4ba1d301e72ba233422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea61c984cf21f99640ed4f3effdf28bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#aea61c984cf21f99640ed4f3effdf28bc">B_DIV2n</a>(a,  n)&#160;&#160;&#160;( (a) &gt;&gt; ((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n)) )</td></tr>
+<tr class="memdesc:aea61c984cf21f99640ed4f3effdf28bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цілочисельне ділення числа a на \(2^n \).  <a href="base__conf_8h.html#aea61c984cf21f99640ed4f3effdf28bc">Детальніше...</a><br /></td></tr>
+<tr class="separator:aea61c984cf21f99640ed4f3effdf28bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5ad17234509bd7e230cf43206cd7ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#aab5ad17234509bd7e230cf43206cd7ec">B_OVER_DIV2n</a>(a,  n)&#160;&#160;&#160;( <a class="el" href="base__conf_8h.html#aea61c984cf21f99640ed4f3effdf28bc">B_DIV2n</a>((a), ( (<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n) ) ) + ( <a class="el" href="base__conf_8h.html#a3876cf8fdf4cb4ba1d301e72ba233422">B_MOD2n</a>((a),((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n)))? 1: 0 ) )</td></tr>
+<tr class="memdesc:aab5ad17234509bd7e230cf43206cd7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Надлишкове цілочисельне ділення числа a на \(2^n \).  <a href="base__conf_8h.html#aab5ad17234509bd7e230cf43206cd7ec">Детальніше...</a><br /></td></tr>
+<tr class="separator:aab5ad17234509bd7e230cf43206cd7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Визначення типів</h2></td></tr>
+<tr class="memitem:a91ad9478d81a7aaf2593e8d9c3d06a14"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td></tr>
+<tr class="memdesc:a91ad9478d81a7aaf2593e8d9c3d06a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основні скорочення типів  <a href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">Детальніше...</a><br /></td></tr>
+<tr class="separator:a91ad9478d81a7aaf2593e8d9c3d06a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95f123a6c9bcfee6a343170ef8c5f69"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#ab95f123a6c9bcfee6a343170ef8c5f69">ushort</a></td></tr>
+<tr class="memdesc:ab95f123a6c9bcfee6a343170ef8c5f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">тип ushort це скорочення unsigned short  <a href="base__conf_8h.html#ab95f123a6c9bcfee6a343170ef8c5f69">Детальніше...</a><br /></td></tr>
+<tr class="separator:ab95f123a6c9bcfee6a343170ef8c5f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f85814a8290f9797005d3b28e7e5fc"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a65f85814a8290f9797005d3b28e7e5fc">uchar</a></td></tr>
+<tr class="memdesc:a65f85814a8290f9797005d3b28e7e5fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">тип uchar це скорочення unsigned char  <a href="base__conf_8h.html#a65f85814a8290f9797005d3b28e7e5fc">Детальніше...</a><br /></td></tr>
+<tr class="separator:a65f85814a8290f9797005d3b28e7e5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Змінні</h2></td></tr>
+<tr class="memitem:a4f23c688725200b332f9aac338a79407"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__conf_8h.html#a4f23c688725200b332f9aac338a79407">CUBE_STRPIS_PINS</a> [] = {00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}</td></tr>
+<tr class="memdesc:a4f23c688725200b332f9aac338a79407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масив номерів пінів до яких підключені світлодіодні стрічки  <a href="base__conf_8h.html#a4f23c688725200b332f9aac338a79407">Детальніше...</a><br /></td></tr>
+<tr class="separator:a4f23c688725200b332f9aac338a79407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p >Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком. Вміщує список базових типів, корисних макросів для бінарних операцій, та швидке піднесення в цілий степінь. </p>
+<dl class="section version"><dt>Версія</dt><dd>0.01 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2022-03-20</dd></dl>
+<dl class="section copyright"><dt>Копірайт</dt><dd>Copyright (c) 2022 </dd></dl>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a></p>
+</div><h2 class="groupheader">Опис макровизначень</h2>
+<a id="ae2f08dc603ae93c402abd918ba4e23e1" name="ae2f08dc603ae93c402abd918ba4e23e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f08dc603ae93c402abd918ba4e23e1">&#9670;&nbsp;</a></span>ABS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ABS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;( (a)&lt;0?(-(a)):(a) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Макрос знаходження модуля числа </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a id="aea61c984cf21f99640ed4f3effdf28bc" name="aea61c984cf21f99640ed4f3effdf28bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea61c984cf21f99640ed4f3effdf28bc">&#9670;&nbsp;</a></span>B_DIV2n</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B_DIV2n</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;( (a) &gt;&gt; ((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n)) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Цілочисельне ділення числа a на \(2^n \). </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>&ndash; що поділити </td></tr>
+    <tr><td class="paramname">n</td><td>&ndash; цілий додатний степінь 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00166">166</a></p>
+
+</div>
+</div>
+<a id="ab866aeaa7e85d62a25ae347d48a77e5b" name="ab866aeaa7e85d62a25ae347d48a77e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab866aeaa7e85d62a25ae347d48a77e5b">&#9670;&nbsp;</a></span>B_MOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B_MOD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;((a) &amp; <a class="el" href="base__conf_8h.html#a0333f0eea276317e2d9867ca60f24cdc">ONEUINT</a> )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повертає остачу від ділення a на 2. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>число </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00145">145</a></p>
+
+</div>
+</div>
+<a id="a3876cf8fdf4cb4ba1d301e72ba233422" name="a3876cf8fdf4cb4ba1d301e72ba233422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3876cf8fdf4cb4ba1d301e72ba233422">&#9670;&nbsp;</a></span>B_MOD2n</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B_MOD2n</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;( (a)&amp; ( ~( ((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)-1) &lt;&lt; ((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n)) ) ) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Остача від ділення числа a на \(2^n \). </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>&ndash; що поділити </td></tr>
+    <tr><td class="paramname">n</td><td>&ndash; цілий додатний степінь 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00158">158</a></p>
+
+</div>
+</div>
+<a id="aba7ac642701a01646951c089c254727f" name="aba7ac642701a01646951c089c254727f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7ac642701a01646951c089c254727f">&#9670;&nbsp;</a></span>B_MUL2n</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B_MUL2n</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;( (a) &lt;&lt; ((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n)) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Цілочисельне множення числа a на \(2^n \). </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>&ndash; що помножити </td></tr>
+    <tr><td class="paramname">n</td><td>&ndash; цілий додатний степінь 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00151">151</a></p>
+
+</div>
+</div>
+<a id="aab5ad17234509bd7e230cf43206cd7ec" name="aab5ad17234509bd7e230cf43206cd7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5ad17234509bd7e230cf43206cd7ec">&#9670;&nbsp;</a></span>B_OVER_DIV2n</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B_OVER_DIV2n</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;( <a class="el" href="base__conf_8h.html#aea61c984cf21f99640ed4f3effdf28bc">B_DIV2n</a>((a), ( (<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n) ) ) + ( <a class="el" href="base__conf_8h.html#a3876cf8fdf4cb4ba1d301e72ba233422">B_MOD2n</a>((a),((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)(n)))? 1: 0 ) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Надлишкове цілочисельне ділення числа a на \(2^n \). </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>&ndash; що поділити </td></tr>
+    <tr><td class="paramname">n</td><td>&ndash; цілий додатний степінь 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00174">174</a></p>
+
+</div>
+</div>
+<a id="a82bd921b8d1509338204ef884b81176a" name="a82bd921b8d1509338204ef884b81176a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82bd921b8d1509338204ef884b81176a">&#9670;&nbsp;</a></span>CUBE_LED_COUNT_ON_STRIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CUBE_LED_COUNT_ON_STRIP&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Кількість світлодіодів в стрічці </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00055">55</a></p>
+
+</div>
+</div>
+<a id="a095fbac83d9ab735e85aa328b73788f1" name="a095fbac83d9ab735e85aa328b73788f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a095fbac83d9ab735e85aa328b73788f1">&#9670;&nbsp;</a></span>CUBE_MAX_COORD_INT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CUBE_MAX_COORD_INT&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Налаштування фізичних параметрів кубика </p>
+<p >Максимально можлива ціла координата на кубику </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00043">43</a></p>
+
+</div>
+</div>
+<a id="a62754e0d20a5fcb3511212e2d89decf8" name="a62754e0d20a5fcb3511212e2d89decf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62754e0d20a5fcb3511212e2d89decf8">&#9670;&nbsp;</a></span>CUBE_STRIPS_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CUBE_STRIPS_COUNT&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Кількість стрічок світлодіодів </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a id="afa99ec4acc4ecb2dc3c2d05da15d0e3f" name="afa99ec4acc4ecb2dc3c2d05da15d0e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa99ec4acc4ecb2dc3c2d05da15d0e3f">&#9670;&nbsp;</a></span>MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((a)&gt;(b)) ? (a) : (b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Макрос знаходження найбільшого значення </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00124">124</a></p>
+
+</div>
+</div>
+<a id="a3acffbd305ee72dcd4593c0d8af64a4f" name="a3acffbd305ee72dcd4593c0d8af64a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3acffbd305ee72dcd4593c0d8af64a4f">&#9670;&nbsp;</a></span>MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((a)&lt;(b)) ? (a) : (b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Додаткові швидкі операції </p>
+<p >Макрос знаходження найменшого значення </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00118">118</a></p>
+
+</div>
+</div>
+<a id="a0333f0eea276317e2d9867ca60f24cdc" name="a0333f0eea276317e2d9867ca60f24cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0333f0eea276317e2d9867ca60f24cdc">&#9670;&nbsp;</a></span>ONEUINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ONEUINT&#160;&#160;&#160;((<a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>)1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>32бітна одиниця </p>
+<p >Базові бінарні операції над цілими числами </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00138">138</a></p>
+
+</div>
+</div>
+<a id="a081c298396db214d51fe86787a54f852" name="a081c298396db214d51fe86787a54f852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081c298396db214d51fe86787a54f852">&#9670;&nbsp;</a></span>RENDER_TIME_ON_STRIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RENDER_TIME_ON_STRIP&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Налаштування render-а (відрисовника) </p>
+<p >Налаштування для рендера час світіння однієї стрічки в мілісекундах ( \(10^{-3}\) секунди) </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00074">74</a></p>
+
+</div>
+</div>
+<a id="a00694174b9ecaa3819f31dbb0435f38d" name="a00694174b9ecaa3819f31dbb0435f38d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00694174b9ecaa3819f31dbb0435f38d">&#9670;&nbsp;</a></span>WEBCTR_INF_UPDATE_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WEBCTR_INF_UPDATE_DELAY&#160;&#160;&#160;2000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Налаштування веб-контролера </p>
+<p >Затримка перед оновленням інформації з головного сервера </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00087">87</a></p>
+
+</div>
+</div>
+<a id="a3d180c3879c0945b5d4d71897830171a" name="a3d180c3879c0945b5d4d71897830171a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d180c3879c0945b5d4d71897830171a">&#9670;&nbsp;</a></span>WEBCTR_QUERY_LINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WEBCTR_QUERY_LINK&#160;&#160;&#160;&quot;www.your-web.dom/for_cube_php&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Адреса запитів для кубика </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00093">93</a></p>
+
+</div>
+</div>
+<a id="a1005f3b72bbfb32399a06bc4cfc2328b" name="a1005f3b72bbfb32399a06bc4cfc2328b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1005f3b72bbfb32399a06bc4cfc2328b">&#9670;&nbsp;</a></span>WEBCTR_WIFI_PASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WEBCTR_WIFI_PASS&#160;&#160;&#160;&quot;your_password&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пароль вашого WiFi прстрою </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00105">105</a></p>
+
+</div>
+</div>
+<a id="abfd45e686e035c910a8d3426ba7ef0c2" name="abfd45e686e035c910a8d3426ba7ef0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfd45e686e035c910a8d3426ba7ef0c2">&#9670;&nbsp;</a></span>WEBCTR_WIFI_SSID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WEBCTR_WIFI_SSID&#160;&#160;&#160;&quot;your_ssid&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSID вашого WiFi пристрою </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00099">99</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Опис визначень типів</h2>
+<a id="a65f85814a8290f9797005d3b28e7e5fc" name="a65f85814a8290f9797005d3b28e7e5fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65f85814a8290f9797005d3b28e7e5fc">&#9670;&nbsp;</a></span>uchar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="base__conf_8h.html#a65f85814a8290f9797005d3b28e7e5fc">uchar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>тип uchar це скорочення unsigned char </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00032">32</a></p>
+
+</div>
+</div>
+<a id="a91ad9478d81a7aaf2593e8d9c3d06a14" name="a91ad9478d81a7aaf2593e8d9c3d06a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ad9478d81a7aaf2593e8d9c3d06a14">&#9670;&nbsp;</a></span>uint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="base__conf_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Основні скорочення типів </p>
+<p >тип uint це скорочення unsigned int </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="ab95f123a6c9bcfee6a343170ef8c5f69" name="ab95f123a6c9bcfee6a343170ef8c5f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab95f123a6c9bcfee6a343170ef8c5f69">&#9670;&nbsp;</a></span>ushort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short <a class="el" href="base__conf_8h.html#ab95f123a6c9bcfee6a343170ef8c5f69">ushort</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>тип ushort це скорочення unsigned short </p>
+
+<p class="definition">Див. визначення в файлі <a class="el" href="base__conf_8h_source.html">base_conf.h</a>, рядок <a class="el" href="base__conf_8h_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Опис змінних</h2>
+<a id="a4f23c688725200b332f9aac338a79407" name="a4f23c688725200b332f9aac338a79407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f23c688725200b332f9aac338a79407">&#9670;&nbsp;</a></span>CUBE_STRPIS_PINS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CUBE_STRPIS_PINS[] = {00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Масив номерів пінів до яких підключені світлодіодні стрічки </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

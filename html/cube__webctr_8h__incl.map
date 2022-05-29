@@ -1,0 +1,7 @@
+<map id="cube_webctr.h" name="cube_webctr.h">
+<area shape="rect" id="node1" title="Бібліотека WebCtr – головної управляючої структури, для взаємодії з сервером, підготовкою даних для а..." alt="" coords="65,5,179,32"/>
+<area shape="rect" id="node2" href="$cube__render_8h.html" title="Бібліотека рендера, забезпечуює функціонал для відрисовки відготовленних данних на кубику і реацію на..." alt="" coords="5,155,119,181"/>
+<area shape="rect" id="node4" href="$cube__painters_8h.html" title="Бібліотека CubePainers – містить реалізацію всіх анаміційних можливостей кубика." alt="" coords="115,80,241,107"/>
+<area shape="rect" id="node3" href="$base__conf_8h.html" title="Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком...." alt="" coords="74,229,173,256"/>
+<area shape="rect" id="node5" href="$cube_g_l_8h.html" title="Бібліотека CubeGL – бібліотека для спрощення рисування та підготовки до відображення анімації на куби..." alt="" coords="143,155,226,181"/>
+</map>

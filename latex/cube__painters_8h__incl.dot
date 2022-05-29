@@ -1,0 +1,11 @@
+digraph "cube_painters.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="cube_painters.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Бібліотека CubePainers – містить реалізацію всіх анаміційних можливостей кубика."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="cubeGL.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cube_g_l_8h.html",tooltip="Бібліотека CubeGL – бібліотека для спрощення рисування та підготовки до відображення анімації на куби..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="base_conf.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$base__conf_8h.html",tooltip="Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком...."];
+}

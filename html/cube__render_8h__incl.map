@@ -1,0 +1,4 @@
+<map id="cube_render.h" name="cube_render.h">
+<area shape="rect" id="node1" title="Бібліотека рендера, забезпечуює функціонал для відрисовки відготовленних данних на кубику і реацію на..." alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node2" href="$base__conf_8h.html" title="Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком...." alt="" coords="13,80,111,107"/>
+</map>
