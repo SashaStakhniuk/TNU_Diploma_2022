@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "220428617520",
+    "project_id": "authorization-8e003",
+    "storage_bucket": "authorization-8e003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220428617520:android:8833ca99e87cb794b3aaf5",
+        "android_client_info": {
+          "package_name": "itstep.android.googleauthorizationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220428617520-htqra0hmgr6ffckit5f8ct4u40vkvc3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa_xm9XlSbEPu7-0_XgU1TukFHlWhvQg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220428617520-htqra0hmgr6ffckit5f8ct4u40vkvc3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

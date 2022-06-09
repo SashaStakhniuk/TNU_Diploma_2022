@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cube Management</string>
+    <string name="image_about">User profile photo</string>
+    <string name="user_name">User profile name</string>
+    <string name="user_email">User profile email</string>
+    <string name="sign_out_btn">Sign out</string>
+    <string name="sign_in_btn">Sign in with Google</string>
+    <string name="switch_off_btn">Switch off</string>
+    <string name="animation1_btn">Animation №1</string>
+    <string name="animation2_btn">Animation №2</string>
+    <string name="animation3_btn">Animation №3</string>
+    <string name="time_btn">Time</string>
+    <string name="date_btn">Date</string>
+    <string name="cubeActionText">Make your choice</string>
+
+
+</resources>
