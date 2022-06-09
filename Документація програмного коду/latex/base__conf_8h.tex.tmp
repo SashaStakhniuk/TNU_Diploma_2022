@@ -1,0 +1,410 @@
+\hypertarget{base__conf_8h}{}\doxysection{Файл base\+\_\+conf.\+h}
+\label{base__conf_8h}\index{base\_conf.h@{base\_conf.h}}
+
+
+Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком. Вміщує список базових типів, корисних макросів для бінарних операцій, та швидке піднесення в цілий степінь.  
+
+
+Граф файлів, які включають цей файл\+:
+% FIG 0
+\doxysubsection*{Макровизначення}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{base__conf_8h_a095fbac83d9ab735e85aa328b73788f1}{CUBE\+\_\+\+MAX\+\_\+\+COORD\+\_\+\+INT}}~9
+\begin{DoxyCompactList}\small\item\em Налаштування фізичних параметрів кубика \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a62754e0d20a5fcb3511212e2d89decf8}{CUBE\+\_\+\+STRIPS\+\_\+\+COUNT}}~20
+\begin{DoxyCompactList}\small\item\em Кількість стрічок світлодіодів \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a82bd921b8d1509338204ef884b81176a}{CUBE\+\_\+\+LED\+\_\+\+COUNT\+\_\+\+ON\+\_\+\+STRIP}}~50
+\begin{DoxyCompactList}\small\item\em Кількість світлодіодів в стрічці \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a081c298396db214d51fe86787a54f852}{RENDER\+\_\+\+TIME\+\_\+\+ON\+\_\+\+STRIP}}~1
+\begin{DoxyCompactList}\small\item\em Налаштування render-\/а (відрисовника) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a00694174b9ecaa3819f31dbb0435f38d}{WEBCTR\+\_\+\+INF\+\_\+\+UPDATE\+\_\+\+DELAY}}~2000
+\begin{DoxyCompactList}\small\item\em Налаштування веб-\/контролера \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a3d180c3879c0945b5d4d71897830171a}{WEBCTR\+\_\+\+QUERY\+\_\+\+LINK}}~\char`\"{}www.\+your-\/web.\+dom/for\+\_\+cube\+\_\+php\char`\"{}
+\begin{DoxyCompactList}\small\item\em Адреса запитів для кубика \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_abfd45e686e035c910a8d3426ba7ef0c2}{WEBCTR\+\_\+\+WIFI\+\_\+\+SSID}}~\char`\"{}your\+\_\+ssid\char`\"{}
+\begin{DoxyCompactList}\small\item\em SSID вашого Wi\+Fi пристрою \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a1005f3b72bbfb32399a06bc4cfc2328b}{WEBCTR\+\_\+\+WIFI\+\_\+\+PASS}}~\char`\"{}your\+\_\+password\char`\"{}
+\begin{DoxyCompactList}\small\item\em Пароль вашого Wi\+Fi прстрою \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{MIN}}(a,  b)~(((a)$<$(b)) ? (a) \+: (b))
+\begin{DoxyCompactList}\small\item\em Додаткові швидкі операції \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{MAX}}(a,  b)~(((a)$>$(b)) ? (a) \+: (b))
+\begin{DoxyCompactList}\small\item\em Макрос знаходження найбільшого значення \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_ae2f08dc603ae93c402abd918ba4e23e1}{ABS}}(a)~( (a)$<$0?(-\/(a))\+:(a) )
+\begin{DoxyCompactList}\small\item\em Макрос знаходження модуля числа \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a0333f0eea276317e2d9867ca60f24cdc}{ONEUINT}}~((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})1)
+\begin{DoxyCompactList}\small\item\em 32бітна одиниця \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_ab866aeaa7e85d62a25ae347d48a77e5b}{B\+\_\+\+MOD}}(a)~((a) \& \mbox{\hyperlink{base__conf_8h_a0333f0eea276317e2d9867ca60f24cdc}{ONEUINT}} )
+\begin{DoxyCompactList}\small\item\em Повертає остачу від ділення a на 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_aba7ac642701a01646951c089c254727f}{B\+\_\+\+MUL2n}}(a,  n)~( (a) $<$$<$ ((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n)) )
+\begin{DoxyCompactList}\small\item\em Цілочисельне множення числа a на $2^n $. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_a3876cf8fdf4cb4ba1d301e72ba233422}{B\+\_\+\+MOD2n}}(a,  n)~( (a)\& ( $\sim$( ((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})-\/1) $<$$<$ ((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n)) ) ) )
+\begin{DoxyCompactList}\small\item\em Остача від ділення числа a на $2^n $. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_aea61c984cf21f99640ed4f3effdf28bc}{B\+\_\+\+DIV2n}}(a,  n)~( (a) $>$$>$ ((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n)) )
+\begin{DoxyCompactList}\small\item\em Цілочисельне ділення числа a на $2^n $. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{base__conf_8h_aab5ad17234509bd7e230cf43206cd7ec}{B\+\_\+\+OVER\+\_\+\+DIV2n}}(a,  n)~( \mbox{\hyperlink{base__conf_8h_aea61c984cf21f99640ed4f3effdf28bc}{B\+\_\+\+DIV2n}}((a), ( (\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n) ) ) + ( \mbox{\hyperlink{base__conf_8h_a3876cf8fdf4cb4ba1d301e72ba233422}{B\+\_\+\+MOD2n}}((a),((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n)))? 1\+: 0 ) )
+\begin{DoxyCompactList}\small\item\em Надлишкове цілочисельне ділення числа a на $2^n $. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Визначення типів}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}}
+\begin{DoxyCompactList}\small\item\em Основні скорочення типів \end{DoxyCompactList}\item 
+typedef unsigned short \mbox{\hyperlink{base__conf_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{ushort}}
+\begin{DoxyCompactList}\small\item\em тип ushort це скорочення unsigned short \end{DoxyCompactList}\item 
+typedef unsigned char \mbox{\hyperlink{base__conf_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}
+\begin{DoxyCompactList}\small\item\em тип uchar це скорочення unsigned char \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Змінні}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{base__conf_8h_a4f23c688725200b332f9aac338a79407}{CUBE\+\_\+\+STRPIS\+\_\+\+PINS}} \mbox{[}$\,$\mbox{]} = \{00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19\}
+\begin{DoxyCompactList}\small\item\em Масив номерів пінів до яких підключені світлодіодні стрічки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Детальний опис}
+Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком. Вміщує список базових типів, корисних макросів для бінарних операцій, та швидке піднесення в цілий степінь. 
+
+\begin{DoxyVersion}{Версія}
+0.\+01 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2022-\/03-\/20
+\end{DoxyDate}
+\begin{DoxyCopyright}{Копірайт}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}
+
+
+
+\doxysubsection{Опис макровизначень}
+\mbox{\Hypertarget{base__conf_8h_ae2f08dc603ae93c402abd918ba4e23e1}\label{base__conf_8h_ae2f08dc603ae93c402abd918ba4e23e1}} 
+\index{base\_conf.h@{base\_conf.h}!ABS@{ABS}}
+\index{ABS@{ABS}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{ABS}{ABS}}
+{\footnotesize\ttfamily \#define ABS(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~( (a)$<$0?(-\/(a))\+:(a) )}
+
+
+
+Макрос знаходження модуля числа 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00130}{130}}
+
+\mbox{\Hypertarget{base__conf_8h_aea61c984cf21f99640ed4f3effdf28bc}\label{base__conf_8h_aea61c984cf21f99640ed4f3effdf28bc}} 
+\index{base\_conf.h@{base\_conf.h}!B\_DIV2n@{B\_DIV2n}}
+\index{B\_DIV2n@{B\_DIV2n}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{B\_DIV2n}{B\_DIV2n}}
+{\footnotesize\ttfamily \#define B\+\_\+\+DIV2n(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{n }\end{DoxyParamCaption})~( (a) $>$$>$ ((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n)) )}
+
+
+
+Цілочисельне ділення числа a на $2^n $. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em a} & -- що поділити \\
+\hline
+{\em n} & -- цілий додатний степінь 2 \\
+\hline
+\end{DoxyParams}
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00166}{166}}
+
+\mbox{\Hypertarget{base__conf_8h_ab866aeaa7e85d62a25ae347d48a77e5b}\label{base__conf_8h_ab866aeaa7e85d62a25ae347d48a77e5b}} 
+\index{base\_conf.h@{base\_conf.h}!B\_MOD@{B\_MOD}}
+\index{B\_MOD@{B\_MOD}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{B\_MOD}{B\_MOD}}
+{\footnotesize\ttfamily \#define B\+\_\+\+MOD(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~((a) \& \mbox{\hyperlink{base__conf_8h_a0333f0eea276317e2d9867ca60f24cdc}{ONEUINT}} )}
+
+
+
+Повертає остачу від ділення a на 2. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em a} & число \\
+\hline
+\end{DoxyParams}
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00145}{145}}
+
+\mbox{\Hypertarget{base__conf_8h_a3876cf8fdf4cb4ba1d301e72ba233422}\label{base__conf_8h_a3876cf8fdf4cb4ba1d301e72ba233422}} 
+\index{base\_conf.h@{base\_conf.h}!B\_MOD2n@{B\_MOD2n}}
+\index{B\_MOD2n@{B\_MOD2n}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{B\_MOD2n}{B\_MOD2n}}
+{\footnotesize\ttfamily \#define B\+\_\+\+MOD2n(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{n }\end{DoxyParamCaption})~( (a)\& ( $\sim$( ((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})-\/1) $<$$<$ ((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n)) ) ) )}
+
+
+
+Остача від ділення числа a на $2^n $. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em a} & -- що поділити \\
+\hline
+{\em n} & -- цілий додатний степінь 2 \\
+\hline
+\end{DoxyParams}
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00158}{158}}
+
+\mbox{\Hypertarget{base__conf_8h_aba7ac642701a01646951c089c254727f}\label{base__conf_8h_aba7ac642701a01646951c089c254727f}} 
+\index{base\_conf.h@{base\_conf.h}!B\_MUL2n@{B\_MUL2n}}
+\index{B\_MUL2n@{B\_MUL2n}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{B\_MUL2n}{B\_MUL2n}}
+{\footnotesize\ttfamily \#define B\+\_\+\+MUL2n(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{n }\end{DoxyParamCaption})~( (a) $<$$<$ ((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n)) )}
+
+
+
+Цілочисельне множення числа a на $2^n $. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em a} & -- що помножити \\
+\hline
+{\em n} & -- цілий додатний степінь 2 \\
+\hline
+\end{DoxyParams}
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00151}{151}}
+
+\mbox{\Hypertarget{base__conf_8h_aab5ad17234509bd7e230cf43206cd7ec}\label{base__conf_8h_aab5ad17234509bd7e230cf43206cd7ec}} 
+\index{base\_conf.h@{base\_conf.h}!B\_OVER\_DIV2n@{B\_OVER\_DIV2n}}
+\index{B\_OVER\_DIV2n@{B\_OVER\_DIV2n}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{B\_OVER\_DIV2n}{B\_OVER\_DIV2n}}
+{\footnotesize\ttfamily \#define B\+\_\+\+OVER\+\_\+\+DIV2n(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{n }\end{DoxyParamCaption})~( \mbox{\hyperlink{base__conf_8h_aea61c984cf21f99640ed4f3effdf28bc}{B\+\_\+\+DIV2n}}((a), ( (\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n) ) ) + ( \mbox{\hyperlink{base__conf_8h_a3876cf8fdf4cb4ba1d301e72ba233422}{B\+\_\+\+MOD2n}}((a),((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})(n)))? 1\+: 0 ) )}
+
+
+
+Надлишкове цілочисельне ділення числа a на $2^n $. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em a} & -- що поділити \\
+\hline
+{\em n} & -- цілий додатний степінь 2 \\
+\hline
+\end{DoxyParams}
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00174}{174}}
+
+\mbox{\Hypertarget{base__conf_8h_a82bd921b8d1509338204ef884b81176a}\label{base__conf_8h_a82bd921b8d1509338204ef884b81176a}} 
+\index{base\_conf.h@{base\_conf.h}!CUBE\_LED\_COUNT\_ON\_STRIP@{CUBE\_LED\_COUNT\_ON\_STRIP}}
+\index{CUBE\_LED\_COUNT\_ON\_STRIP@{CUBE\_LED\_COUNT\_ON\_STRIP}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{CUBE\_LED\_COUNT\_ON\_STRIP}{CUBE\_LED\_COUNT\_ON\_STRIP}}
+{\footnotesize\ttfamily \#define CUBE\+\_\+\+LED\+\_\+\+COUNT\+\_\+\+ON\+\_\+\+STRIP~50}
+
+
+
+Кількість світлодіодів в стрічці 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00055}{55}}
+
+\mbox{\Hypertarget{base__conf_8h_a095fbac83d9ab735e85aa328b73788f1}\label{base__conf_8h_a095fbac83d9ab735e85aa328b73788f1}} 
+\index{base\_conf.h@{base\_conf.h}!CUBE\_MAX\_COORD\_INT@{CUBE\_MAX\_COORD\_INT}}
+\index{CUBE\_MAX\_COORD\_INT@{CUBE\_MAX\_COORD\_INT}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{CUBE\_MAX\_COORD\_INT}{CUBE\_MAX\_COORD\_INT}}
+{\footnotesize\ttfamily \#define CUBE\+\_\+\+MAX\+\_\+\+COORD\+\_\+\+INT~9}
+
+
+
+Налаштування фізичних параметрів кубика 
+
+Максимально можлива ціла координата на кубику 
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00043}{43}}
+
+\mbox{\Hypertarget{base__conf_8h_a62754e0d20a5fcb3511212e2d89decf8}\label{base__conf_8h_a62754e0d20a5fcb3511212e2d89decf8}} 
+\index{base\_conf.h@{base\_conf.h}!CUBE\_STRIPS\_COUNT@{CUBE\_STRIPS\_COUNT}}
+\index{CUBE\_STRIPS\_COUNT@{CUBE\_STRIPS\_COUNT}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{CUBE\_STRIPS\_COUNT}{CUBE\_STRIPS\_COUNT}}
+{\footnotesize\ttfamily \#define CUBE\+\_\+\+STRIPS\+\_\+\+COUNT~20}
+
+
+
+Кількість стрічок світлодіодів 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00049}{49}}
+
+\mbox{\Hypertarget{base__conf_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}\label{base__conf_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}} 
+\index{base\_conf.h@{base\_conf.h}!MAX@{MAX}}
+\index{MAX@{MAX}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define MAX(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~(((a)$>$(b)) ? (a) \+: (b))}
+
+
+
+Макрос знаходження найбільшого значення 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00124}{124}}
+
+\mbox{\Hypertarget{base__conf_8h_a3acffbd305ee72dcd4593c0d8af64a4f}\label{base__conf_8h_a3acffbd305ee72dcd4593c0d8af64a4f}} 
+\index{base\_conf.h@{base\_conf.h}!MIN@{MIN}}
+\index{MIN@{MIN}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define MIN(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~(((a)$<$(b)) ? (a) \+: (b))}
+
+
+
+Додаткові швидкі операції 
+
+Макрос знаходження найменшого значення 
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00118}{118}}
+
+\mbox{\Hypertarget{base__conf_8h_a0333f0eea276317e2d9867ca60f24cdc}\label{base__conf_8h_a0333f0eea276317e2d9867ca60f24cdc}} 
+\index{base\_conf.h@{base\_conf.h}!ONEUINT@{ONEUINT}}
+\index{ONEUINT@{ONEUINT}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{ONEUINT}{ONEUINT}}
+{\footnotesize\ttfamily \#define ONEUINT~((\mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}})1)}
+
+
+
+32бітна одиниця 
+
+Базові бінарні операції над цілими числами 
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00138}{138}}
+
+\mbox{\Hypertarget{base__conf_8h_a081c298396db214d51fe86787a54f852}\label{base__conf_8h_a081c298396db214d51fe86787a54f852}} 
+\index{base\_conf.h@{base\_conf.h}!RENDER\_TIME\_ON\_STRIP@{RENDER\_TIME\_ON\_STRIP}}
+\index{RENDER\_TIME\_ON\_STRIP@{RENDER\_TIME\_ON\_STRIP}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{RENDER\_TIME\_ON\_STRIP}{RENDER\_TIME\_ON\_STRIP}}
+{\footnotesize\ttfamily \#define RENDER\+\_\+\+TIME\+\_\+\+ON\+\_\+\+STRIP~1}
+
+
+
+Налаштування render-\/а (відрисовника) 
+
+Налаштування для рендера час світіння однієї стрічки в мілісекундах ( $10^{-3}$ секунди) 
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00074}{74}}
+
+\mbox{\Hypertarget{base__conf_8h_a00694174b9ecaa3819f31dbb0435f38d}\label{base__conf_8h_a00694174b9ecaa3819f31dbb0435f38d}} 
+\index{base\_conf.h@{base\_conf.h}!WEBCTR\_INF\_UPDATE\_DELAY@{WEBCTR\_INF\_UPDATE\_DELAY}}
+\index{WEBCTR\_INF\_UPDATE\_DELAY@{WEBCTR\_INF\_UPDATE\_DELAY}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{WEBCTR\_INF\_UPDATE\_DELAY}{WEBCTR\_INF\_UPDATE\_DELAY}}
+{\footnotesize\ttfamily \#define WEBCTR\+\_\+\+INF\+\_\+\+UPDATE\+\_\+\+DELAY~2000}
+
+
+
+Налаштування веб-\/контролера 
+
+Затримка перед оновленням інформації з головного сервера 
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00087}{87}}
+
+\mbox{\Hypertarget{base__conf_8h_a3d180c3879c0945b5d4d71897830171a}\label{base__conf_8h_a3d180c3879c0945b5d4d71897830171a}} 
+\index{base\_conf.h@{base\_conf.h}!WEBCTR\_QUERY\_LINK@{WEBCTR\_QUERY\_LINK}}
+\index{WEBCTR\_QUERY\_LINK@{WEBCTR\_QUERY\_LINK}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{WEBCTR\_QUERY\_LINK}{WEBCTR\_QUERY\_LINK}}
+{\footnotesize\ttfamily \#define WEBCTR\+\_\+\+QUERY\+\_\+\+LINK~\char`\"{}www.\+your-\/web.\+dom/for\+\_\+cube\+\_\+php\char`\"{}}
+
+
+
+Адреса запитів для кубика 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00093}{93}}
+
+\mbox{\Hypertarget{base__conf_8h_a1005f3b72bbfb32399a06bc4cfc2328b}\label{base__conf_8h_a1005f3b72bbfb32399a06bc4cfc2328b}} 
+\index{base\_conf.h@{base\_conf.h}!WEBCTR\_WIFI\_PASS@{WEBCTR\_WIFI\_PASS}}
+\index{WEBCTR\_WIFI\_PASS@{WEBCTR\_WIFI\_PASS}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{WEBCTR\_WIFI\_PASS}{WEBCTR\_WIFI\_PASS}}
+{\footnotesize\ttfamily \#define WEBCTR\+\_\+\+WIFI\+\_\+\+PASS~\char`\"{}your\+\_\+password\char`\"{}}
+
+
+
+Пароль вашого Wi\+Fi прстрою 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00105}{105}}
+
+\mbox{\Hypertarget{base__conf_8h_abfd45e686e035c910a8d3426ba7ef0c2}\label{base__conf_8h_abfd45e686e035c910a8d3426ba7ef0c2}} 
+\index{base\_conf.h@{base\_conf.h}!WEBCTR\_WIFI\_SSID@{WEBCTR\_WIFI\_SSID}}
+\index{WEBCTR\_WIFI\_SSID@{WEBCTR\_WIFI\_SSID}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{WEBCTR\_WIFI\_SSID}{WEBCTR\_WIFI\_SSID}}
+{\footnotesize\ttfamily \#define WEBCTR\+\_\+\+WIFI\+\_\+\+SSID~\char`\"{}your\+\_\+ssid\char`\"{}}
+
+
+
+SSID вашого Wi\+Fi пристрою 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00099}{99}}
+
+
+
+\doxysubsection{Опис визначень типів}
+\mbox{\Hypertarget{base__conf_8h_a65f85814a8290f9797005d3b28e7e5fc}\label{base__conf_8h_a65f85814a8290f9797005d3b28e7e5fc}} 
+\index{base\_conf.h@{base\_conf.h}!uchar@{uchar}}
+\index{uchar@{uchar}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{uchar}{uchar}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{base__conf_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}
+
+
+
+тип uchar це скорочення unsigned char 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00032}{32}}
+
+\mbox{\Hypertarget{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}\label{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}} 
+\index{base\_conf.h@{base\_conf.h}!uint@{uint}}
+\index{uint@{uint}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{uint}{uint}}
+{\footnotesize\ttfamily typedef unsigned int \mbox{\hyperlink{base__conf_8h_a91ad9478d81a7aaf2593e8d9c3d06a14}{uint}}}
+
+
+
+Основні скорочення типів 
+
+тип uint це скорочення unsigned int 
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00020}{20}}
+
+\mbox{\Hypertarget{base__conf_8h_ab95f123a6c9bcfee6a343170ef8c5f69}\label{base__conf_8h_ab95f123a6c9bcfee6a343170ef8c5f69}} 
+\index{base\_conf.h@{base\_conf.h}!ushort@{ushort}}
+\index{ushort@{ushort}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{ushort}{ushort}}
+{\footnotesize\ttfamily typedef unsigned short \mbox{\hyperlink{base__conf_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{ushort}}}
+
+
+
+тип ushort це скорочення unsigned short 
+
+
+
+Див. визначення в файлі \mbox{\hyperlink{base__conf_8h_source}{base\+\_\+conf.\+h}}, рядок \mbox{\hyperlink{base__conf_8h_source_l00026}{26}}
+
+
+
+\doxysubsection{Опис змінних}
+\mbox{\Hypertarget{base__conf_8h_a4f23c688725200b332f9aac338a79407}\label{base__conf_8h_a4f23c688725200b332f9aac338a79407}} 
+\index{base\_conf.h@{base\_conf.h}!CUBE\_STRPIS\_PINS@{CUBE\_STRPIS\_PINS}}
+\index{CUBE\_STRPIS\_PINS@{CUBE\_STRPIS\_PINS}!base\_conf.h@{base\_conf.h}}
+\doxysubsubsection{\texorpdfstring{CUBE\_STRPIS\_PINS}{CUBE\_STRPIS\_PINS}}
+{\footnotesize\ttfamily const int CUBE\+\_\+\+STRPIS\+\_\+\+PINS\mbox{[}$\,$\mbox{]} = \{00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19\}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Масив номерів пінів до яких підключені світлодіодні стрічки 
+

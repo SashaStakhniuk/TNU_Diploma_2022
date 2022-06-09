@@ -1,0 +1,51 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x422 Ukrainian
+Title=CUBE
+
+[WINDOWS]
+main="CUBE","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+base__conf_8h.html
+base__conf_8h_source.html
+cube__painters_8h.html
+cube__painters_8h_source.html
+cube__render_8h.html
+cube__render_8h_source.html
+cube__webctr_8h.html
+cube__webctr_8h_source.html
+cube_g_l_8h.html
+cube_g_l_8h_source.html
+files.html
+globals.html
+globals_defs.html
+globals_func.html
+globals_type.html
+globals_vars.html
+index.html
+main_8cpp.html
+main_8cpp_source.html
+bc_s.png
+bdwn.png
+closed.png
+doc.png
+doxygen.svg
+folderclosed.png
+folderopen.png
+nav_f.png
+nav_g.png
+nav_h.png
+open.png
+splitbar.png
+sync_off.png
+sync_on.png
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png

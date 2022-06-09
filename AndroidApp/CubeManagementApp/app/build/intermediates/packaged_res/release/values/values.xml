@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="back">#718987</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#d3d3d3</color>
+    <color name="orange">#FF3206</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red">#FF0000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text">#008080</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFF300</color>
+    <string name="animation1_btn">Animation №1</string>
+    <string name="animation2_btn">Animation №2</string>
+    <string name="animation3_btn">Animation №3</string>
+    <string name="app_name">Cube Management</string>
+    <string name="cubeActionText">Make your choice</string>
+    <string name="date_btn">Date</string>
+    <string name="default_web_client_id" translatable="false">220428617520-htqra0hmgr6ffckit5f8ct4u40vkvc3h.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">220428617520</string>
+    <string name="google_api_key" translatable="false">AIzaSyCa_xm9XlSbEPu7-0_XgU1TukFHlWhvQg0</string>
+    <string name="google_app_id" translatable="false">1:220428617520:android:8833ca99e87cb794b3aaf5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCa_xm9XlSbEPu7-0_XgU1TukFHlWhvQg0</string>
+    <string name="google_storage_bucket" translatable="false">authorization-8e003.appspot.com</string>
+    <string name="image_about">User profile photo</string>
+    <string name="project_id" translatable="false">authorization-8e003</string>
+    <string name="sign_in_btn">Sign in with Google</string>
+    <string name="sign_out_btn">Sign out</string>
+    <string name="switch_off_btn">Switch off</string>
+    <string name="time_btn">Time</string>
+    <string name="user_email">User profile email</string>
+    <string name="user_name">User profile name</string>
+    <style name="Theme.GoogleAuthorizationApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/back</item>
+        
+        <item name="colorSecondary">@color/gray</item>
+        <item name="colorSecondaryVariant">@color/gray</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>
