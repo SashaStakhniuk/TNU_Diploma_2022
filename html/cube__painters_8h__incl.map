@@ -1,5 +1,0 @@
-<map id="cube_painters.h" name="cube_painters.h">
-<area shape="rect" id="node1" title="Бібліотека CubePainers – містить реалізацію всіх анаміційних можливостей кубика." alt="" coords="5,5,131,32"/>
-<area shape="rect" id="node2" href="$cube_g_l_8h.html" title="Бібліотека CubeGL – бібліотека для спрощення рисування та підготовки до відображення анімації на куби..." alt="" coords="27,80,109,107"/>
-<area shape="rect" id="node3" href="$base__conf_8h.html" title="Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком...." alt="" coords="19,155,117,181"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="base_conf.h" name="base_conf.h">
-<area shape="rect" id="node1" title="Файл базових налаштувань. Містить основні параматри налаштувань для роботи з кубиком...." alt="" coords="89,5,188,32"/>
-<area shape="rect" id="node2" href="$cube_g_l_8h.html" title="Бібліотека CubeGL – бібліотека для спрощення рисування та підготовки до відображення анімації на куби..." alt="" coords="59,80,141,107"/>
-<area shape="rect" id="node5" href="$cube__render_8h.html" title="Бібліотека рендера, забезпечуює функціонал для відрисовки відготовленних данних на кубику і реацію на..." alt="" coords="155,155,269,181"/>
-<area shape="rect" id="node3" href="$cube__painters_8h.html" title="Бібліотека CubePainers – містить реалізацію всіх анаміційних можливостей кубика." alt="" coords="5,155,131,181"/>
-<area shape="rect" id="node4" href="$cube__webctr_8h.html" title="Бібліотека WebCtr – головної управляючої структури, для взаємодії з сервером, підготовкою даних для а..." alt="" coords="83,229,197,256"/>
-</map>
